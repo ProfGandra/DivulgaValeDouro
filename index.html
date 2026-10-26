@@ -63,6 +63,39 @@ main .card{padding:1.3rem .9rem}
 main .btn{font-size:.73rem;letter-spacing:.02em}
 #taverna{min-height:0;padding:1rem 0}
 }
+/* Pergaminho ilustrado: fundo e rolos sem distorcer as extremidades */
+main{
+  position:relative;
+  isolation:isolate;
+  width:min(94%,860px);
+  max-width:860px;
+  margin:2rem auto 3rem;
+  padding:clamp(125px,15vw,175px) clamp(38px,9%,100px);
+  background:transparent;
+  background-image:none;
+  border:0;outline:0;border-radius:0;
+  box-shadow:none;
+}
+main::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  pointer-events:none;
+  background-image:url("assets/pergaminho.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  filter:drop-shadow(0 22px 22px #080402b5);
+}
+main section{position:relative}
+main .paper{box-shadow:none}
+@media(max-width:600px){
+  main{width:100%;margin:12px auto 22px;padding:clamp(88px,24vw,120px) clamp(29px,10%,43px);border:0;outline:0;box-shadow:none;background:transparent}
+  main::before{background-size:100% 100%}
+  main section{padding:1.8rem 0}
+  main .card{padding:1.1rem .7rem}
+  main .paper p{font-size:clamp(1.5rem,6.4vw,1.9rem)}
+}
 </style></head>
 <body><header id="inicio"><div class="hero"><div class="eyebrow">Crônicas de um mundo além dos mapas</div><h1>ValeDouro</h1><div class="ornament">✦ ❖ ✦</div><p class="subtitle">Toda fronteira guarda uma história. Toda história, uma verdade que ainda não foi contada.</p><a class="btn" href="#portal">Atravesse as fronteiras</a></div></header>
 <nav aria-label="Navegação principal"><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">☰ Menu do viajante</button><div class="nav-links" id="nav-links"><a href="#portal">O chamado</a><a href="#livros">Os livros</a><a href="#origens">As origens</a><a href="#caminhos">Encontre seu caminho</a></div></nav>
