@@ -147,6 +147,12 @@ main{height:min(850px,calc(100svh - 32px))!important;min-height:480px!important}
 /* Ajuste fino do limite inferior: conteúdo termina antes do rolo */
 .pergaminho-leitor{bottom:20%!important}
 @media(max-width:600px){.pergaminho-leitor{bottom:20%!important}}
+
+/* Fade-out no limite inferior da área rolável, sem afetar o pergaminho */
+.pergaminho-leitor{
+ -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 79%,transparent 100%)!important;
+ mask-image:linear-gradient(to bottom,#000 0%,#000 79%,transparent 100%)!important;
+}
 </style></head>
 <body><header id="inicio"><div class="hero"><div class="eyebrow">Crônicas de um mundo além dos mapas</div><h1>ValeDouro</h1><div class="ornament">✦ ❖ ✦</div><p class="subtitle">Toda fronteira guarda uma história. Toda história, uma verdade que ainda não foi contada.</p><a class="btn" href="#portal">Atravesse as fronteiras</a></div></header>
 <nav aria-label="Navegação principal"><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">☰ Menu do viajante</button><div class="nav-links" id="nav-links"><a href="#portal">O chamado</a><a href="#livros">Os livros</a><a href="#origens">As origens</a><a href="#caminhos">Encontre seu caminho</a></div></nav>
