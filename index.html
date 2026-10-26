@@ -118,6 +118,31 @@ main .card{min-width:0}
 .pergaminho-leitor .intro p,.pergaminho-leitor #caminhos>p{font-size:clamp(1.65rem,3vw,2.15rem);overflow-wrap:break-word}
 .pergaminho-leitor .paper p{font-size:clamp(1.75rem,3vw,2.15rem)}
 @media(max-width:600px){.pergaminho-leitor{padding-left:clamp(49px,13%,75px)!important;padding-right:clamp(49px,13%,75px)!important}.pergaminho-leitor h2{font-size:clamp(1.15rem,5vw,1.6rem)}.pergaminho-leitor .intro p,.pergaminho-leitor #caminhos>p{font-size:clamp(1.5rem,5.5vw,1.9rem)}.pergaminho-leitor .paper p{font-size:clamp(1.55rem,5.8vw,1.95rem)}}
+
+/* Visor corrigido: conteúdo somente no centro, sem rolar sob os rolos */
+main{height:min(850px,calc(100svh - 32px))!important;min-height:480px!important}
+.pergaminho-leitor{
+ position:absolute!important;
+ top:13%!important;bottom:13%!important;
+ left:15%!important;right:15%!important;
+ width:auto!important;height:auto!important;
+ padding:12px 8px 22px!important;
+ overflow-x:hidden!important;overflow-y:auto!important;
+ mask-image:none!important;-webkit-mask-image:none!important;
+ scroll-padding-top:18px!important;
+}
+.pergaminho-leitor section{scroll-margin-top:18px!important}
+.pergaminho-leitor h2{font-size:clamp(1.25rem,2.7vw,1.85rem)!important;line-height:1.28!important;overflow-wrap:anywhere}
+.pergaminho-leitor p{max-width:100%;overflow-wrap:anywhere}
+.pergaminho-leitor .intro p,.pergaminho-leitor #caminhos>p{font-size:clamp(1.5rem,2.7vw,2rem)!important;line-height:1.35!important}
+.pergaminho-leitor .paper p{font-size:clamp(1.6rem,2.8vw,2.1rem)!important}
+.pergaminho-leitor .cards{grid-template-columns:minmax(0,1fr)!important}
+@media(max-width:600px){
+ .pergaminho-leitor{top:13%!important;bottom:13%!important;left:14%!important;right:14%!important;padding:8px 3px 16px!important}
+ .pergaminho-leitor h2{font-size:clamp(1.1rem,4.5vw,1.5rem)!important}
+ .pergaminho-leitor .intro p,.pergaminho-leitor #caminhos>p{font-size:clamp(1.35rem,5.2vw,1.8rem)!important}
+ .pergaminho-leitor .paper p{font-size:clamp(1.4rem,5.3vw,1.85rem)!important}
+}
 </style></head>
 <body><header id="inicio"><div class="hero"><div class="eyebrow">Crônicas de um mundo além dos mapas</div><h1>ValeDouro</h1><div class="ornament">✦ ❖ ✦</div><p class="subtitle">Toda fronteira guarda uma história. Toda história, uma verdade que ainda não foi contada.</p><a class="btn" href="#portal">Atravesse as fronteiras</a></div></header>
 <nav aria-label="Navegação principal"><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">☰ Menu do viajante</button><div class="nav-links" id="nav-links"><a href="#portal">O chamado</a><a href="#livros">Os livros</a><a href="#origens">As origens</a><a href="#caminhos">Encontre seu caminho</a></div></nav>
