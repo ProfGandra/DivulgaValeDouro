@@ -109,6 +109,15 @@ main .intro p,main #caminhos>p{font-family:'Italianno','Caveat',cursive;font-siz
 main .card p,main .card .muted{font-family:'IM Fell English',Georgia,serif;font-size:1.15rem;line-height:1.45}
 main .card{min-width:0}
 @media(max-width:600px){main{width:100%;height:calc(100svh - 16px);min-height:430px;margin:8px auto 16px!important}.pergaminho-leitor{padding:clamp(90px,20%,130px) clamp(37px,10%,55px) clamp(90px,20%,130px);scroll-padding-top:95px;mask-image:linear-gradient(to bottom,transparent 0%,#000 13%,#000 87%,transparent 100%)}.pergaminho-leitor section{scroll-margin-top:90px}main .intro p,main #caminhos>p{font-size:clamp(1.8rem,7vw,2.2rem)}}
+
+/* Ajuste do visor: largura legível e rolagem longe dos rolos */
+.pergaminho-leitor{padding-left:clamp(80px,15%,135px)!important;padding-right:clamp(80px,15%,135px)!important;mask-image:linear-gradient(to bottom,transparent 0%,#000 17%,#000 83%,transparent 100%)!important}
+.pergaminho-leitor section{max-width:100%;min-width:0}
+.pergaminho-leitor h2{font-size:clamp(1.35rem,3.2vw,2.05rem);overflow-wrap:break-word;hyphens:auto}
+.pergaminho-leitor .cards{grid-template-columns:1fr}
+.pergaminho-leitor .intro p,.pergaminho-leitor #caminhos>p{font-size:clamp(1.65rem,3vw,2.15rem);overflow-wrap:break-word}
+.pergaminho-leitor .paper p{font-size:clamp(1.75rem,3vw,2.15rem)}
+@media(max-width:600px){.pergaminho-leitor{padding-left:clamp(49px,13%,75px)!important;padding-right:clamp(49px,13%,75px)!important}.pergaminho-leitor h2{font-size:clamp(1.15rem,5vw,1.6rem)}.pergaminho-leitor .intro p,.pergaminho-leitor #caminhos>p{font-size:clamp(1.5rem,5.5vw,1.9rem)}.pergaminho-leitor .paper p{font-size:clamp(1.55rem,5.8vw,1.95rem)}}
 </style></head>
 <body><header id="inicio"><div class="hero"><div class="eyebrow">Crônicas de um mundo além dos mapas</div><h1>ValeDouro</h1><div class="ornament">✦ ❖ ✦</div><p class="subtitle">Toda fronteira guarda uma história. Toda história, uma verdade que ainda não foi contada.</p><a class="btn" href="#portal">Atravesse as fronteiras</a></div></header>
 <nav aria-label="Navegação principal"><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">☰ Menu do viajante</button><div class="nav-links" id="nav-links"><a href="#portal">O chamado</a><a href="#livros">Os livros</a><a href="#origens">As origens</a><a href="#caminhos">Encontre seu caminho</a></div></nav>
